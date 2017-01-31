@@ -11,12 +11,10 @@
 		482078977DC31AEE50A7F8EC /* Pods_RxSpike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22A7BD48386CDB68216F227 /* Pods_RxSpike.framework */; };
 		E98B92252A0FBFD089A19938 /* Pods_RxSpikeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067A92D7577AC753DFFD0391 /* Pods_RxSpikeUITests.framework */; };
 		EAC941451E40BF5A004A4479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC941441E40BF5A004A4479 /* AppDelegate.swift */; };
-		EAC941471E40BF5A004A4479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC941461E40BF5A004A4479 /* ViewController.swift */; };
+		EAC941471E40BF5A004A4479 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC941461E40BF5A004A4479 /* ContactsTableViewController.swift */; };
 		EAC9414A1E40BF5A004A4479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC941481E40BF5A004A4479 /* Main.storyboard */; };
 		EAC9414C1E40BF5A004A4479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC9414B1E40BF5A004A4479 /* Assets.xcassets */; };
 		EAC9414F1E40BF5A004A4479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC9414D1E40BF5A004A4479 /* LaunchScreen.storyboard */; };
-		EAC9415A1E40BF5A004A4479 /* RxSpikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC941591E40BF5A004A4479 /* RxSpikeTests.swift */; };
-		EAC941651E40BF5A004A4479 /* RxSpikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC941641E40BF5A004A4479 /* RxSpikeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +44,14 @@
 		CB7E7754C0095B513FC967E3 /* Pods-RxSpikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpikeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpikeTests/Pods-RxSpikeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EAC941411E40BF5A004A4479 /* RxSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC941441E40BF5A004A4479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAC941461E40BF5A004A4479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAC941461E40BF5A004A4479 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		EAC941491E40BF5A004A4479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAC9414B1E40BF5A004A4479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAC9414E1E40BF5A004A4479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAC941501E40BF5A004A4479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC941551E40BF5A004A4479 /* RxSpikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSpikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAC941591E40BF5A004A4479 /* RxSpikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSpikeTests.swift; sourceTree = "<group>"; };
 		EAC9415B1E40BF5A004A4479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC941601E40BF5A004A4479 /* RxSpikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSpikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAC941641E40BF5A004A4479 /* RxSpikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSpikeUITests.swift; sourceTree = "<group>"; };
 		EAC941661E40BF5A004A4479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9763785932BB72F7415D21 /* Pods-RxSpikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpikeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpikeTests/Pods-RxSpikeTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE134ABCD3DB44AC12503E38 /* Pods-RxSpike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpike/Pods-RxSpike.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +108,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EA80051A1E40C19A00BF0F75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC941661E40BF5A004A4479 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA80051B1E40C20400BF0F75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC9415B1E40BF5A004A4479 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA80051C1E40C20900BF0F75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC941441E40BF5A004A4479 /* AppDelegate.swift */,
+				EAC9414B1E40BF5A004A4479 /* Assets.xcassets */,
+				EAC9414D1E40BF5A004A4479 /* LaunchScreen.storyboard */,
+				EAC941501E40BF5A004A4479 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		EAC941381E40BF5A004A4479 = {
 			isa = PBXGroup;
 			children = (
@@ -137,12 +160,9 @@
 		EAC941431E40BF5A004A4479 /* RxSpike */ = {
 			isa = PBXGroup;
 			children = (
-				EAC941441E40BF5A004A4479 /* AppDelegate.swift */,
-				EAC941461E40BF5A004A4479 /* ViewController.swift */,
+				EAC941461E40BF5A004A4479 /* ContactsTableViewController.swift */,
 				EAC941481E40BF5A004A4479 /* Main.storyboard */,
-				EAC9414B1E40BF5A004A4479 /* Assets.xcassets */,
-				EAC9414D1E40BF5A004A4479 /* LaunchScreen.storyboard */,
-				EAC941501E40BF5A004A4479 /* Info.plist */,
+				EA80051C1E40C20900BF0F75 /* Supporting Files */,
 			);
 			path = RxSpike;
 			sourceTree = "<group>";
@@ -150,8 +170,7 @@
 		EAC941581E40BF5A004A4479 /* RxSpikeTests */ = {
 			isa = PBXGroup;
 			children = (
-				EAC941591E40BF5A004A4479 /* RxSpikeTests.swift */,
-				EAC9415B1E40BF5A004A4479 /* Info.plist */,
+				EA80051B1E40C20400BF0F75 /* Supporting Files */,
 			);
 			path = RxSpikeTests;
 			sourceTree = "<group>";
@@ -159,8 +178,7 @@
 		EAC941631E40BF5A004A4479 /* RxSpikeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EAC941641E40BF5A004A4479 /* RxSpikeUITests.swift */,
-				EAC941661E40BF5A004A4479 /* Info.plist */,
+				EA80051A1E40C19A00BF0F75 /* Supporting Files */,
 			);
 			path = RxSpikeUITests;
 			sourceTree = "<group>";
@@ -449,7 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC941471E40BF5A004A4479 /* ViewController.swift in Sources */,
+				EAC941471E40BF5A004A4479 /* ContactsTableViewController.swift in Sources */,
 				EAC941451E40BF5A004A4479 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +476,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC9415A1E40BF5A004A4479 /* RxSpikeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +483,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC941651E40BF5A004A4479 /* RxSpikeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
