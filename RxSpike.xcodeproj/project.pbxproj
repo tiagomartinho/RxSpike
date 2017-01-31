@@ -602,6 +602,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE134ABCD3DB44AC12503E38 /* Pods-RxSpike.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = RxSpike/Info.plist;
@@ -616,6 +617,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 71A6E84D6594957B81093E6F /* Pods-RxSpike.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = RxSpike/Info.plist;
@@ -707,6 +709,7 @@
 				EAC9416B1E40BF5A004A4479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAC9416C1E40BF5A004A4479 /* Build configuration list for PBXNativeTarget "RxSpikeTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +718,7 @@
 				EAC9416E1E40BF5A004A4479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAC9416F1E40BF5A004A4479 /* Build configuration list for PBXNativeTarget "RxSpikeUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +727,7 @@
 				EAC941711E40BF5A004A4479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
