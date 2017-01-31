@@ -1,0 +1,6 @@
+framework module Pods_RxSpikeUITests {
+  umbrella header "Pods-RxSpikeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
