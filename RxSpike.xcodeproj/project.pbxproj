@@ -10,6 +10,8 @@
 		3C4BD7FFE5F5F54C6E9A9D93 /* Pods_RxSpikeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D30F72AF55BB8CB532D0B3 /* Pods_RxSpikeTests.framework */; };
 		482078977DC31AEE50A7F8EC /* Pods_RxSpike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22A7BD48386CDB68216F227 /* Pods_RxSpike.framework */; };
 		E98B92252A0FBFD089A19938 /* Pods_RxSpikeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067A92D7577AC753DFFD0391 /* Pods_RxSpikeUITests.framework */; };
+		EA5C66411E4207F700D882DB /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C66401E4207F700D882DB /* Contact.swift */; };
+		EA5C66431E42081300D882DB /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C66421E42081300D882DB /* AddContactViewController.swift */; };
 		EAC941451E40BF5A004A4479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC941441E40BF5A004A4479 /* AppDelegate.swift */; };
 		EAC941471E40BF5A004A4479 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC941461E40BF5A004A4479 /* ContactsTableViewController.swift */; };
 		EAC9414A1E40BF5A004A4479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC941481E40BF5A004A4479 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		A22A7BD48386CDB68216F227 /* Pods_RxSpike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSpike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE72C72278AF089F35F22F39 /* Pods-RxSpikeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpikeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpikeUITests/Pods-RxSpikeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CB7E7754C0095B513FC967E3 /* Pods-RxSpikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpikeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpikeTests/Pods-RxSpikeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA5C66401E4207F700D882DB /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		EA5C66421E42081300D882DB /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		EAC941411E40BF5A004A4479 /* RxSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC941441E40BF5A004A4479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAC941461E40BF5A004A4479 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				EAC941461E40BF5A004A4479 /* ContactsTableViewController.swift */,
+				EA5C66421E42081300D882DB /* AddContactViewController.swift */,
+				EA5C66401E4207F700D882DB /* Contact.swift */,
 				EAC941481E40BF5A004A4479 /* Main.storyboard */,
 				EA80051C1E40C20900BF0F75 /* Supporting Files */,
 			);
@@ -467,6 +473,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5C66411E4207F700D882DB /* Contact.swift in Sources */,
+				EA5C66431E42081300D882DB /* AddContactViewController.swift in Sources */,
 				EAC941471E40BF5A004A4479 /* ContactsTableViewController.swift in Sources */,
 				EAC941451E40BF5A004A4479 /* AppDelegate.swift in Sources */,
 			);
