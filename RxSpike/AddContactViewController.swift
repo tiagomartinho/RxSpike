@@ -9,6 +9,7 @@ class AddContactViewController: UITableViewController {
     @IBOutlet weak var errorsLabel: UILabel!
 
     @IBAction func save(_ sender: Any) {
+        delegate?.didAddContact(contact: contact)
         dismiss(animated: true, completion: nil)
     }
 
@@ -16,8 +17,10 @@ class AddContactViewController: UITableViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    weak var delegate: AddContactViewDelegate?
+
     private var disposeBag: DisposeBag!
-    private var contact: Contact?
+    private var contact: Contact!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +39,7 @@ class AddContactViewController: UITableViewController {
 
         contact.subscribe(onNext: { contact in
             self.updateUI(with: contact)
+            self.contact = contact
         }).addDisposableTo(disposeBag)
     }
 
