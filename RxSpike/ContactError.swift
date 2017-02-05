@@ -1,7 +1,7 @@
 enum ContactError: String {
     case emptyName = "Name is empty"
     case emptyNumber = "Number is empty"
-    case numberDoesNotStartWithPlus = "Number does not start with a \"+\""
+    case numberHasInvalidFormat = "Number should be a \"+\" followed by a nonempty group of digits"
 }
 
 extension Collection where Iterator.Element == ContactError {

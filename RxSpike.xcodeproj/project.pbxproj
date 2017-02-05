@@ -11,6 +11,7 @@
 		24A571081E479628006DA7A4 /* ContactValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A571071E479628006DA7A4 /* ContactValidatorTest.swift */; };
 		24A5710A1E479982006DA7A4 /* ContactError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A571091E479982006DA7A4 /* ContactError.swift */; };
 		24A5710C1E4799A1006DA7A4 /* ContactValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5710B1E4799A1006DA7A4 /* ContactValidator.swift */; };
+		24A571101E47A5B2006DA7A4 /* String+MatchRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5710F1E47A5B2006DA7A4 /* String+MatchRegex.swift */; };
 		3C4BD7FFE5F5F54C6E9A9D93 /* Pods_RxSpikeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D30F72AF55BB8CB532D0B3 /* Pods_RxSpikeTests.framework */; };
 		482078977DC31AEE50A7F8EC /* Pods_RxSpike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22A7BD48386CDB68216F227 /* Pods_RxSpike.framework */; };
 		E98B92252A0FBFD089A19938 /* Pods_RxSpikeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067A92D7577AC753DFFD0391 /* Pods_RxSpikeUITests.framework */; };
@@ -46,6 +47,7 @@
 		24A571071E479628006DA7A4 /* ContactValidatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactValidatorTest.swift; sourceTree = "<group>"; };
 		24A571091E479982006DA7A4 /* ContactError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactError.swift; sourceTree = "<group>"; };
 		24A5710B1E4799A1006DA7A4 /* ContactValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactValidator.swift; sourceTree = "<group>"; };
+		24A5710F1E47A5B2006DA7A4 /* String+MatchRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MatchRegex.swift"; sourceTree = "<group>"; };
 		3AFA7326E9659975E770DE45 /* Pods-RxSpikeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpikeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpikeUITests/Pods-RxSpikeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40D30F72AF55BB8CB532D0B3 /* Pods_RxSpikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSpikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A6E84D6594957B81093E6F /* Pods-RxSpike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpike.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpike/Pods-RxSpike.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				24A5710D1E4799B1006DA7A4 /* Contact */,
 				EAC941481E40BF5A004A4479 /* Main.storyboard */,
 				EA80051C1E40C20900BF0F75 /* Supporting Files */,
+				24A5710F1E47A5B2006DA7A4 /* String+MatchRegex.swift */,
 			);
 			path = RxSpike;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				24A5710A1E479982006DA7A4 /* ContactError.swift in Sources */,
 				EA5C66411E4207F700D882DB /* Contact.swift in Sources */,
 				24A5710C1E4799A1006DA7A4 /* ContactValidator.swift in Sources */,
+				24A571101E47A5B2006DA7A4 /* String+MatchRegex.swift in Sources */,
 				EA5C66431E42081300D882DB /* AddContactViewController.swift in Sources */,
 				EAC941471E40BF5A004A4479 /* ContactsTableViewController.swift in Sources */,
 				EAC941451E40BF5A004A4479 /* AppDelegate.swift in Sources */,

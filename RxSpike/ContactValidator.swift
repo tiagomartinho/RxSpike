@@ -1,3 +1,5 @@
+import Foundation
+
 extension Contact {
 
     var isValid: Bool {
@@ -15,8 +17,8 @@ extension Contact {
             errors.append(.emptyNumber)
         }
 
-        if number.characters.first != "+" {
-            errors.append(.numberDoesNotStartWithPlus)
+        if !number.match(pattern: "^[+][0-9]*\\s[0-9]*\\s[0-9]{6,}$") {
+            errors.append(.numberHasInvalidFormat)
         }
 
         return errors

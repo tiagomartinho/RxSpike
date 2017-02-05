@@ -43,20 +43,12 @@ class ContactValidatorTest: XCTestCase {
         XCTAssertFalse(errors.contains(.emptyNumber))
     }
 
-    func testContactNumberReturnErrorWhenItDoesNotStartWithPlusSign() {
-        let contactWithNumber = Contact(name: "", number: "some number")
+    func testContactNumberIsNotPlusFollowedByNonEmptyGroupOfDigits() {
+        let contactWithNumber = Contact(name: "", number: "+ 3902")
 
         let errors = contactWithNumber.errors
 
-        XCTAssert(errors.contains(.numberDoesNotStartWithPlus))
-    }
-
-    func testContactDoesNotReturnErrorWhenItDoesStartWithPlusSign() {
-        let contactWithNumber = Contact(name: "", number: "+")
-
-        let errors = contactWithNumber.errors
-
-        XCTAssertFalse(errors.contains(.numberDoesNotStartWithPlus))
+        XCTAssert(errors.contains(.numberHasInvalidFormat))
     }
 
     func testValidContact() {
