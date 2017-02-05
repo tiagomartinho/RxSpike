@@ -6,6 +6,7 @@ class AddContactsViewController: UITableViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var numberTextField: UITextField!
+    @IBOutlet weak var errorsLabel: UILabel!
 
     @IBAction func save(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -15,8 +16,12 @@ class AddContactsViewController: UITableViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    var disposeBag: DisposeBag!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.disposeBag = DisposeBag()
 
         let nameValidator = nameTextField.rx.text.orEmpty
             .distinctUntilChanged()
@@ -24,11 +29,13 @@ class AddContactsViewController: UITableViewController {
                 if query.isEmpty {
                     return .just("Name is empty")
                 }
-
                 return .just("")
             }
             .observeOn(MainScheduler.instance)
 
-        tableView.rx.obe
+        nameValidator.subscribe(onNext: { message in
+            self.errorsLabel.text = message
+        }).addDisposableTo(disposeBag)
     }
 }
+
