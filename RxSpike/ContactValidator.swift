@@ -15,6 +15,10 @@ extension Contact {
             errors.append(.emptyNumber)
         }
 
+        if number.characters.first != "+" {
+            errors.append(.numberDoesNotStartWithPlus)
+        }
+
         return errors
     }
 }

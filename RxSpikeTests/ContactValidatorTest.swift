@@ -42,4 +42,12 @@ class ContactValidatorTest: XCTestCase {
 
         XCTAssertFalse(errors.contains(.emptyNumber))
     }
+
+    func testContactNumberReturnErrorWhenItDoesNotStartWithPlusSign() {
+        let contactWithNumber = Contact(name: "", number: "some number")
+
+        let errors = contactWithNumber.errors
+
+        XCTAssert(errors.contains(.numberDoesNotStartWithPlus))
+    }
 }
