@@ -1,21 +1,28 @@
 import XCTest
 
 class ContactValidatorTest: XCTestCase {
-    
-    func testEmptyContactIsInvalid() {
-        let contact = Contact(name: "", number: "")
 
-        let isValid = contact.isValid
+    let emptyContact = Contact(name: "", number: "")
+
+    func testEmptyContactIsInvalid() {
+
+        let isValid = emptyContact.isValid
 
         XCTAssertFalse(isValid)
     }
 
-    func testEmptyNameReturnNameEmptyError() {
-        let contact = Contact(name: "", number: "")
+    func testEmptyNameReturnEmptyNameError() {
 
-        let errors = contact.errors
+        let errors = emptyContact.errors
 
         XCTAssert(errors.contains(.emptyName))
+    }
+
+    func testEmptyNumberReturnEmptyNumberError() {
+
+        let errors = emptyContact.errors
+
+        XCTAssert(errors.contains(.emptyNumber))
     }
 }
 
@@ -33,7 +40,7 @@ struct Contact {
 extension Contact {
 
     var errors: [ContactError] {
-        return [.emptyName]
+        return [.emptyName, .emptyNumber]
     }
 
     var isValid: Bool {
@@ -42,5 +49,5 @@ extension Contact {
 }
 
 enum ContactError {
-    case emptyName
+    case emptyName, emptyNumber
 }
