@@ -16,9 +16,9 @@ Contains a form for entering a new entry.
 ## Technicalities
 ### Entries
 
-The application handles a set of entries, that contain a first name, last name, and a telephone number.
+The application handles a set of entries, that contain a name and a telephone number.
 
-The entries should be validated, so that it's not possible to enter an empty first or last name; and the phone number should be of the form:
+The entries should be validated, so that it's not possible to enter an empty name; and the phone number should be of the form:
 
 +39 02 1234567
 
