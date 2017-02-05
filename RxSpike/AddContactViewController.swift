@@ -23,18 +23,20 @@ class AddContactsViewController: UITableViewController {
 
         self.disposeBag = DisposeBag()
 
-        let nameValidator = nameTextField.rx.text.orEmpty
+        let name = nameTextField.rx.text.orEmpty
             .distinctUntilChanged()
-            .flatMapLatest { query -> Observable<String> in
-                if query.isEmpty {
-                    return .just("Name is empty")
-                }
-                return .just("")
-            }
             .observeOn(MainScheduler.instance)
 
-        nameValidator.subscribe(onNext: { message in
-            self.errorsLabel.text = message
+        let number = numberTextField.rx.text.orEmpty
+            .distinctUntilChanged()
+            .observeOn(MainScheduler.instance)
+
+        let contact = Observable.zip(name, number) { (name, number) -> Contact in
+            return Contact(name: name, number: number)
+        }
+
+        contact.subscribe(onNext: { contact in
+            self.errorsLabel.text = "isValid: \(contact.isValid)"
         }).addDisposableTo(disposeBag)
     }
 }
