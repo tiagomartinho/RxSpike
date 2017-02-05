@@ -24,6 +24,22 @@ class ContactValidatorTest: XCTestCase {
 
         XCTAssert(errors.contains(.emptyNumber))
     }
+
+    func testContactWithNameDoesNotReturnEmptyNameError() {
+        let contactWithName = Contact(name: "some name", number: "")
+
+        let errors = contactWithName.errors
+
+        XCTAssertFalse(errors.contains(.emptyName))
+    }
+
+    func testContactWithNumberDoesNotReturnEmptyNumberError() {
+        let contactWithNumber = Contact(name: "", number: "some number")
+
+        let errors = contactWithNumber.errors
+
+        XCTAssertFalse(errors.contains(.emptyNumber))
+    }
 }
 
 struct Contact {
@@ -40,7 +56,17 @@ struct Contact {
 extension Contact {
 
     var errors: [ContactError] {
-        return [.emptyName, .emptyNumber]
+        var errors = [ContactError]()
+
+        if name.isEmpty {
+            errors.append(.emptyName)
+        }
+
+        if number.isEmpty {
+            errors.append(.emptyNumber)
+        }
+
+        return errors
     }
 
     var isValid: Bool {
