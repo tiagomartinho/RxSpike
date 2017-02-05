@@ -24,19 +24,17 @@ class AddContactsViewController: UITableViewController {
         self.disposeBag = DisposeBag()
 
         let name = nameTextField.rx.text.orEmpty
-            .distinctUntilChanged()
             .observeOn(MainScheduler.instance)
 
         let number = numberTextField.rx.text.orEmpty
-            .distinctUntilChanged()
             .observeOn(MainScheduler.instance)
 
-        let contact = Observable.zip(name, number) { (name, number) -> Contact in
+        let contact = Observable.combineLatest(name, number) { (name, number) -> Contact in
             return Contact(name: name, number: number)
         }
 
         contact.subscribe(onNext: { contact in
-            self.errorsLabel.text = "isValid: \(contact.isValid)"
+            self.errorsLabel.text = contact.errors.text
         }).addDisposableTo(disposeBag)
     }
 }
