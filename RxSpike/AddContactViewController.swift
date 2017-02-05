@@ -39,12 +39,9 @@ class AddContactsViewController: UITableViewController {
     }
 
     func updateUI(with contact: Contact) {
-        if contact.isValid {
-            errorsLabel.text = "Contact is valid"
-            errorsLabel.textColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
-        } else {
-            errorsLabel.text = contact.errors.text
-            errorsLabel.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-        }
+        let isValid = contact.isValid
+        errorsLabel.text = isValid ? "Contact is valid" : contact.errors.text
+        errorsLabel.textColor = isValid ? #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1) : #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        navigationItem.rightBarButtonItem?.isEnabled = isValid
     }
 }
