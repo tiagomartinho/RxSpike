@@ -2,9 +2,8 @@ import XCTest
 
 class ContactValidatorTest: XCTestCase {
 
-    let emptyContact = Contact(name: "", number: "")
-
     func testEmptyContactIsInvalid() {
+        let emptyContact = Contact(name: "", number: "")
 
         let isValid = emptyContact.isValid
 
@@ -12,6 +11,7 @@ class ContactValidatorTest: XCTestCase {
     }
 
     func testEmptyNameReturnEmptyNameError() {
+        let emptyContact = Contact(name: "", number: "")
 
         let errors = emptyContact.errors
 
@@ -19,6 +19,7 @@ class ContactValidatorTest: XCTestCase {
     }
 
     func testEmptyNumberReturnEmptyNumberError() {
+        let emptyContact = Contact(name: "", number: "")
 
         let errors = emptyContact.errors
 
