@@ -1,4 +1,5 @@
 import XCTest
+@testable import RxSpike
 
 class ContactValidatorTest: XCTestCase {
 
@@ -41,40 +42,4 @@ class ContactValidatorTest: XCTestCase {
 
         XCTAssertFalse(errors.contains(.emptyNumber))
     }
-}
-
-struct Contact {
-
-    let name: String
-    let number: String
-
-    init(name: String, number: String) {
-        self.name = name
-        self.number = number
-    }
-}
-
-extension Contact {
-
-    var errors: [ContactError] {
-        var errors = [ContactError]()
-
-        if name.isEmpty {
-            errors.append(.emptyName)
-        }
-
-        if number.isEmpty {
-            errors.append(.emptyNumber)
-        }
-
-        return errors
-    }
-
-    var isValid: Bool {
-        return errors.isEmpty
-    }
-}
-
-enum ContactError {
-    case emptyName, emptyNumber
 }
