@@ -13,6 +13,7 @@
 		24A5710C1E4799A1006DA7A4 /* Contact+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5710B1E4799A1006DA7A4 /* Contact+Validator.swift */; };
 		24A571101E47A5B2006DA7A4 /* String+MatchRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5710F1E47A5B2006DA7A4 /* String+MatchRegex.swift */; };
 		24A571121E47AACF006DA7A4 /* AddContactViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A571111E47AACF006DA7A4 /* AddContactViewDelegate.swift */; };
+		24A571151E47AE3D006DA7A4 /* AddContactAcceptanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A571141E47AE3D006DA7A4 /* AddContactAcceptanceTest.swift */; };
 		3C4BD7FFE5F5F54C6E9A9D93 /* Pods_RxSpikeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D30F72AF55BB8CB532D0B3 /* Pods_RxSpikeTests.framework */; };
 		482078977DC31AEE50A7F8EC /* Pods_RxSpike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22A7BD48386CDB68216F227 /* Pods_RxSpike.framework */; };
 		E98B92252A0FBFD089A19938 /* Pods_RxSpikeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067A92D7577AC753DFFD0391 /* Pods_RxSpikeUITests.framework */; };
@@ -50,6 +51,7 @@
 		24A5710B1E4799A1006DA7A4 /* Contact+Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+Validator.swift"; sourceTree = "<group>"; };
 		24A5710F1E47A5B2006DA7A4 /* String+MatchRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MatchRegex.swift"; sourceTree = "<group>"; };
 		24A571111E47AACF006DA7A4 /* AddContactViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewDelegate.swift; sourceTree = "<group>"; };
+		24A571141E47AE3D006DA7A4 /* AddContactAcceptanceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactAcceptanceTest.swift; sourceTree = "<group>"; };
 		3AFA7326E9659975E770DE45 /* Pods-RxSpikeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpikeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpikeUITests/Pods-RxSpikeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40D30F72AF55BB8CB532D0B3 /* Pods_RxSpikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSpikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A6E84D6594957B81093E6F /* Pods-RxSpike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpike.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpike/Pods-RxSpike.release.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 		EAC941631E40BF5A004A4479 /* RxSpikeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				24A571141E47AE3D006DA7A4 /* AddContactAcceptanceTest.swift */,
 				EA80051A1E40C19A00BF0F75 /* Supporting Files */,
 			);
 			path = RxSpikeUITests;
@@ -321,6 +324,7 @@
 					EAC9415F1E40BF5A004A4479 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4C34FT6ABU;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EAC941401E40BF5A004A4479;
 					};
@@ -540,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A571151E47AE3D006DA7A4 /* AddContactAcceptanceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,11 +746,13 @@
 			baseConfigurationReference = 3AFA7326E9659975E770DE45 /* Pods-RxSpikeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = RxSpikeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xpeppers.RxSpikeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = RxSpike;
 			};
@@ -756,6 +763,7 @@
 			baseConfigurationReference = BE72C72278AF089F35F22F39 /* Pods-RxSpikeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = RxSpikeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
