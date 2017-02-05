@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24A571061E4795FA006DA7A4 /* requirements.md in Sources */ = {isa = PBXBuildFile; fileRef = 24A571051E4795FA006DA7A4 /* requirements.md */; };
+		24A571081E479628006DA7A4 /* ContactValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A571071E479628006DA7A4 /* ContactValidatorTest.swift */; };
 		3C4BD7FFE5F5F54C6E9A9D93 /* Pods_RxSpikeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D30F72AF55BB8CB532D0B3 /* Pods_RxSpikeTests.framework */; };
 		482078977DC31AEE50A7F8EC /* Pods_RxSpike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22A7BD48386CDB68216F227 /* Pods_RxSpike.framework */; };
 		E98B92252A0FBFD089A19938 /* Pods_RxSpikeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067A92D7577AC753DFFD0391 /* Pods_RxSpikeUITests.framework */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		067A92D7577AC753DFFD0391 /* Pods_RxSpikeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSpikeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A571051E4795FA006DA7A4 /* requirements.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = requirements.md; sourceTree = "<group>"; };
+		24A571071E479628006DA7A4 /* ContactValidatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactValidatorTest.swift; sourceTree = "<group>"; };
 		3AFA7326E9659975E770DE45 /* Pods-RxSpikeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpikeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpikeUITests/Pods-RxSpikeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40D30F72AF55BB8CB532D0B3 /* Pods_RxSpikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSpikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A6E84D6594957B81093E6F /* Pods-RxSpike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSpike.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSpike/Pods-RxSpike.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 		EAC941381E40BF5A004A4479 = {
 			isa = PBXGroup;
 			children = (
+				24A571051E4795FA006DA7A4 /* requirements.md */,
 				EAC941431E40BF5A004A4479 /* RxSpike */,
 				EAC941581E40BF5A004A4479 /* RxSpikeTests */,
 				EAC941631E40BF5A004A4479 /* RxSpikeUITests */,
@@ -176,6 +181,7 @@
 		EAC941581E40BF5A004A4479 /* RxSpikeTests */ = {
 			isa = PBXGroup;
 			children = (
+				24A571071E479628006DA7A4 /* ContactValidatorTest.swift */,
 				EA80051B1E40C20400BF0F75 /* Supporting Files */,
 			);
 			path = RxSpikeTests;
@@ -272,6 +278,7 @@
 					EAC941541E40BF5A004A4479 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4C34FT6ABU;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EAC941401E40BF5A004A4479;
 					};
@@ -473,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A571061E4795FA006DA7A4 /* requirements.md in Sources */,
 				EA5C66411E4207F700D882DB /* Contact.swift in Sources */,
 				EA5C66431E42081300D882DB /* AddContactViewController.swift in Sources */,
 				EAC941471E40BF5A004A4479 /* ContactsTableViewController.swift in Sources */,
@@ -484,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A571081E479628006DA7A4 /* ContactValidatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,11 +667,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = RxSpikeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xpeppers.RxSpikeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSpike.app/RxSpike";
 			};
@@ -674,6 +685,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = RxSpikeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
