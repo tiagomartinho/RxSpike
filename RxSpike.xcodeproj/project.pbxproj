@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24A571061E4795FA006DA7A4 /* requirements.md in Sources */ = {isa = PBXBuildFile; fileRef = 24A571051E4795FA006DA7A4 /* requirements.md */; };
+		24A571061E4795FA006DA7A4 /* Requirements.md in Sources */ = {isa = PBXBuildFile; fileRef = 24A571051E4795FA006DA7A4 /* Requirements.md */; };
 		24A571081E479628006DA7A4 /* Contact+ValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A571071E479628006DA7A4 /* Contact+ValidatorTest.swift */; };
 		24A5710A1E479982006DA7A4 /* ContactError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A571091E479982006DA7A4 /* ContactError.swift */; };
 		24A5710C1E4799A1006DA7A4 /* Contact+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5710B1E4799A1006DA7A4 /* Contact+Validator.swift */; };
@@ -43,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		067A92D7577AC753DFFD0391 /* Pods_RxSpikeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSpikeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24A571051E4795FA006DA7A4 /* requirements.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = requirements.md; sourceTree = "<group>"; };
+		24A571051E4795FA006DA7A4 /* Requirements.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Requirements.md; sourceTree = "<group>"; };
 		24A571071E479628006DA7A4 /* Contact+ValidatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+ValidatorTest.swift"; sourceTree = "<group>"; };
 		24A571091E479982006DA7A4 /* ContactError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactError.swift; sourceTree = "<group>"; };
 		24A5710B1E4799A1006DA7A4 /* Contact+Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+Validator.swift"; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 		EAC941381E40BF5A004A4479 = {
 			isa = PBXGroup;
 			children = (
-				24A571051E4795FA006DA7A4 /* requirements.md */,
+				24A571051E4795FA006DA7A4 /* Requirements.md */,
 				EAC941431E40BF5A004A4479 /* RxSpike */,
 				EAC941581E40BF5A004A4479 /* RxSpikeTests */,
 				EAC941631E40BF5A004A4479 /* RxSpikeUITests */,
@@ -505,7 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24A571061E4795FA006DA7A4 /* requirements.md in Sources */,
+				24A571061E4795FA006DA7A4 /* Requirements.md in Sources */,
 				24A5710A1E479982006DA7A4 /* ContactError.swift in Sources */,
 				EA5C66411E4207F700D882DB /* Contact.swift in Sources */,
 				24A5710C1E4799A1006DA7A4 /* Contact+Validator.swift in Sources */,

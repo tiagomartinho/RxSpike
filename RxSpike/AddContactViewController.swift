@@ -2,7 +2,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class AddContactsViewController: UITableViewController {
+class AddContactViewController: UITableViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var numberTextField: UITextField!
@@ -17,6 +17,7 @@ class AddContactsViewController: UITableViewController {
     }
 
     private var disposeBag: DisposeBag!
+    private var contact: Contact?
 
     override func viewDidLoad() {
         super.viewDidLoad()
