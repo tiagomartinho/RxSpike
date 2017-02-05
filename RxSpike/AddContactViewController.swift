@@ -16,7 +16,7 @@ class AddContactsViewController: UITableViewController {
         dismiss(animated: true, completion: nil)
     }
 
-    var disposeBag: DisposeBag!
+    private var disposeBag: DisposeBag!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class AddContactsViewController: UITableViewController {
         }).addDisposableTo(disposeBag)
     }
 
-    func updateUI(with contact: Contact) {
+    private func updateUI(with contact: Contact) {
         let isValid = contact.isValid
         errorsLabel.text = isValid ? "Contact is valid" : contact.errors.text
         errorsLabel.textColor = isValid ? #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1) : #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
