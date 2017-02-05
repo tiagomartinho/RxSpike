@@ -48,4 +48,3 @@ class AddContactsViewController: UITableViewController {
         }
     }
 }
-

@@ -50,4 +50,28 @@ class ContactValidatorTest: XCTestCase {
 
         XCTAssert(errors.contains(.numberDoesNotStartWithPlus))
     }
+
+    func testContactDoesNotReturnErrorWhenItDoesStartWithPlusSign() {
+        let contactWithNumber = Contact(name: "", number: "+")
+
+        let errors = contactWithNumber.errors
+
+        XCTAssertFalse(errors.contains(.numberDoesNotStartWithPlus))
+    }
+
+    func testValidContact() {
+        let validContact = Contact(name: "some name", number: "+39 02 1234567")
+
+        let isValid = validContact.isValid
+
+        XCTAssert(isValid)
+    }
+
+    func testValidContactDoesNotContainErrors() {
+        let validContact = Contact(name: "some name", number: "+39 02 1234567")
+
+        let errors = validContact.errors
+
+        XCTAssert(errors.isEmpty)
+    }
 }
